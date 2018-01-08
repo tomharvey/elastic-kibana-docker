@@ -5,7 +5,7 @@ A running single ES cluster with kibana hooked into it. Uses v6.0.1 of ES and Ki
 This does not use X-Pack for any security, it's meant for local dev environments.
 
 
-### Docker requirments
+### Docker requirements
 Starts through Docker, so install Docker first.
 
 Then, do some fucking about to make sure that the docker machine is configured properly to handle ES.
@@ -20,13 +20,14 @@ See the [notes on increasing the limits here](https://www.elastic.co/guide/en/el
 
 
 ### Getting started
-Run the command to start both elasticsearch and kibana:
-`docker-compose up`
+Run this command to start both elasticsearch and kibana:
+```docker-compose up```
 
 
 ### Hostname
 If you're running docker on OSX, you're actually using a VM. Add the IP address of that VM to your host file to make it easier to access the services
-`echo $(docker-machine ip) dockerhost | sudo tee -a /etc/hosts`
+
+```echo $(docker-machine ip) dockerhost | sudo tee -a /etc/hosts```
 
 If you're using Linux, you can use `localhost` instead of `dockerhost` in the below URIs
 
