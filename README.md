@@ -8,7 +8,7 @@ This does not use X-Pack for any security, it's meant for local dev environments
 ### Docker requirements
 Starts through Docker, so install Docker first.
 
-Then, do some fucking about to make sure that the docker machine is configured properly to handle ES.
+Then configure your docker host to properly handle Elasticsearch.
 
 ##### For OSX
 ```
